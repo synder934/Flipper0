@@ -2,8 +2,7 @@
 
 import requests
 
-
-def main():
+def sendData(message):
     data = {
         "content": "Hello, this is a webhook message!",
         "username": "MyWebhookBot",
@@ -11,12 +10,16 @@ def main():
         "embeds": [
             {
                 "title": "Embed Title",
-                "description": "This is an embedded message.",
+                "description": message,
                 "color": 16711680  # RGB color value
             }
         ]
     }
     requests.post(URL, json=data)
+
+
+def main():
+    sendData('yo test 1')
     pass
 
 
